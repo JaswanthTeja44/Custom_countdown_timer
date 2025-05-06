@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Countdown Timer 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Countdown Timer</h1>
+  <form id="timerForm">
+    <label>
+      Select Date and Time:
+      <input type="datetime-local" id="datetimeInput" required />
+    </label>
+    <label>
+      Choose Theme:
+      <select id="themeSelector">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+    <span class="error hidden" id="errorText">Please enter a future date and time.</span>
+    <button type="submit">Start Countdown</button>
+  </form>
+
+  <div class="countdown hidden" id="countdownDisplay">
+    <div><span id="days">00</span><br>Days</div>
+    <div><span id="hours">00</span><br>Hours</div>
+    <div><span id="minutes">00</span><br>Minutes</div>
+    <div><span id="seconds">00</span><br>Seconds</div>
+  </div>
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
